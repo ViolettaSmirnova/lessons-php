@@ -70,6 +70,20 @@
     echo "<br>";
     $dancer->bark();
 
+
+    home($dancer);
+    home($bobik);
+    home($sharik);
+    
+    function home(Dog $dog){
+        $dog->bark();
+        print "<br>";
+        /*if($dog instanceof ShowDog{
+            $dog->dance();
+            print "<br>";
+        }*/
+        
+    }
     ?>
     </body>
 </html>
