@@ -10,7 +10,7 @@
     /*<?php
     echo "<br>";
     class Dog{
-        public $name;
+        protected $name;
         public $weight;
 
         function __construct($name, $weight) {
@@ -35,9 +35,14 @@
             parent::__construct($name, $weight);
             $this->owner = $owner;
         }
+        function bark(){
+            print $this->name;
+            parent::bark();
+            print "woof-woof";
+        }
         function dance(){
            
-            print $this->name . " - dances";
+            print $this->name . " - is dancing";
         }
     }
     
